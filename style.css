@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@900&family=Inter:wght@700&family=Mulish&family=Outfit:wght@700&family=Red+Hat+Display:wght@500;900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap');
+/* font-family: 'Hanken Grotesk', sans-serif; 
+- Mobile: 375px
+- Desktop: 1440px*/
+
+
+:root{
+
+/* ### Primary */
+
+    --Lightred: hsl(0, 100%, 67%);
+    --Orangeyyellow: hsl(39, 100%, 56%);
+    --Greenteal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+
+/* ## Gradients background-color */
+
+    --Lightslateblue: hsl(252, 100%, 67%);
+    --Lightroyalblue: hsl(241, 81%, 54%);
+
+/* circle 
+Use transparency to get the colour variations necessary to match the design. Hint: look into using `hsla()`. */
+    --Violetblue: hsla(256, 72%, 46%, 1);
+    --Persianblue: hsla(241, 72%, 46%, 0);
+
+/* ### Neutral */
+
+    --White: hsl(0, 0%, 100%);
+    --Paleblue: hsl(221, 100%, 96%);
+    --Lightlavender: hsl(241, 100%, 89%);
+    --Darkgrayblue: hsl(224, 30%, 27%);
+
+    --Fontsize: 18px;
+    --font-family: 'Hanken Grotesk', sans-serif;
+    
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: var(--White);
+    border-radius: 20px;
+    box-shadow: 15px 20px 25px var(--Paleblue);
+}
+
+.box{
+    width: 300px;
+    height: 400px;
+    text-align: center;
+    display: inline;
+}
+
+.result{
+    border-radius: 15px;
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
+
+.result > h3 {
+    margin: 1.5rem;
+    color: var(--Lightlavender);
+}
+
+.circle{
+    margin: auto;
+    background-image: linear-gradient(hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+    height: 150px;
+    width: 150px;
+    border-radius: 150px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.circle > h1 {
+    font-size: 56px;
+    color: var(--White);
+}
+.circle > p {
+    color: var(--Greenteal);
+}
+
+.result > h2{
+    margin: 1.25rem;
+    color: var(--Paleblue);
+}
+
+.result > p {
+    color: var(--Greenteal);
+}
+
+/* Summary */
+
+.summary{
+    border-radius: 0px 20px 20px 0;
+    font-size: 18px;
+}
+
+.summary > h3 {
+    margin: 1.5rem;
+    text-align: left;
+}
+
+.btn-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn {
+    width: 80%;
+    height: 40px;
+    background-color: var(--Paleblue);
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Continue{
+    border-radius: 20px;
+    height: 45px;
+    background-color: var(--Darkgrayblue);
+    color: var(--Paleblue);
+    display: flex;
+    justify-content: center;
+    margin-top: 1.25rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+    align-items: center;justify-content: center;
+}
+
+.name>img{
+    margin-right: 4px;
+}
+
